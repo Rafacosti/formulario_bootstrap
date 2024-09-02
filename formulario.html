@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuário</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <a href="#" class="btn btn-secondary mb-3">Voltar</a>
+        <h2 class="text-center">Cadastro de Usuário</h2>
+        <form>
+            <div class="mb-3">
+                <label for="nome" class="form-label">Nome:</label>
+                <input type="text" class="form-control" id="nome" placeholder="Digite seu nome">
+            </div>
+            <div class="mb-3">
+                <label for="telefone" class="form-label">Telefone:</label>
+                <input type="text" class="form-control" id="telefone" placeholder="Digite seu telefone">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Digite seu email">
+            </div>
+            <div class="mb-3">
+                <label for="senha" class="form-label">Senha:</label>
+                <input type="password" class="form-control" id="senha" placeholder="Digite sua senha">
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Sexo:</label>
+                <div>
+                    <input type="radio" id="masculino" name="sexo" value="masculino">
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" id="feminino" name="sexo" value="feminino" class="ms-3">
+                    <label for="feminino">Feminino</label>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="uf" class="form-label">UF:</label>
+                <select class="form-select" id="uf">
+                    <option selected>DF</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Hobbies:</label>
+                <div>
+                    <input type="checkbox" id="futebol" name="hobbies">
+                    <label for="futebol">Futebol</label>
+                    <input type="checkbox" id="xadrez" name="hobbies" class="ms-3">
+                    <label for="xadrez">Xadrez</label>
+                    <input type="checkbox" id="esportes" name="hobbies" class="ms-3">
+                    <label for="esportes">Esportes</label>
+                    <input type="checkbox" id="musica" name="hobbies" class="ms-3">
+                    <label for="musica">Música</label>
+                    <input type="checkbox" id="cinema" name="hobbies" class="ms-3">
+                    <label for="cinema">Cinema</label>
+                    <input type="checkbox" id="leitura" name="hobbies" class="ms-3">
+                    <label for="leitura">Leitura</label>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="observacao" class="form-label">Observação:</label>
+                <textarea class="form-control" id="observacao" rows="3"></textarea>
+            </div>
+            <div class="d-flex">
+                <button type="button" class="btn btn-secondary me-2">Voltar</button>
+                <button type="reset" class="btn btn-warning me-2">Limpar</button>
+                <button type="submit" class="btn btn-primary">Salvar</button>
+            </div>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
